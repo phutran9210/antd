@@ -5,23 +5,6 @@ import MainHeader from '@components/Header'
 
 const { Header, Footer, Content } = Layout
 
-const footerStyle: CSSProperties = {
-    textAlign: 'center',
-    color: '#fff',
-    backgroundColor: '#4096ff',
-}
-
-const headerStyle: CSSProperties = {
-    textAlign: 'center',
-    color: '#fff',
-    backgroundColor: '#4096ff',
-    padding: 0,
-    position: 'fixed',
-    width: '100%',
-    zIndex: 1000,
-    top: 0,
-}
-
 const MainLayout = ({ children }: { children: ReactNode }) => {
     return (
         <Layout
@@ -47,8 +30,26 @@ export default MainLayout
 const StyledContent = styled(Content)`
     text-align: center;
     color: #fff;
-    background-color: #d93309;
+    background-color: #fff;
     //flex: 1;
     width: 100%;
     height: 1200px;
 `
+
+const footerStyle: CSSProperties = {
+    textAlign: 'center',
+    color: '#fff',
+    backgroundColor: '#4096ff',
+}
+
+const headerStyle: CSSProperties = {
+    textAlign: 'center',
+    backgroundColor: '#4096ff',
+    padding: 0,
+    position: 'fixed',
+    width: '80%',
+    zIndex: 1000,
+    top: 50,
+    left: '10%',
+    borderRadius: '30px'
+}
